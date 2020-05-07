@@ -38,18 +38,24 @@
 		<table class="table table-sm text-center table-bordered mt-3 table-light table-hover">
 			<thead class="thead-dark">
 				<tr>
-					<th>User ID</th>
+					<th>NAME</th>
 					<th>EMAIL</th>
 					<th>PASSWORD</th>
+					<th></th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
 				${nothing }
 				<c:forEach items="${list }" var="list">
 					<tr>
-						<td>${list.userid }</td>
+						<td>${list.name }</td>
 						<td>${list.email }</td>
 						<td>${list.password }</td>
+						<td><a href="update?name=${list.name }&email=${list.email }"
+							class="btn btn-primary">Update</a></td>
+						<td><a href="delete?email=${list.email }"
+							class="btn btn-danger">Delete</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>

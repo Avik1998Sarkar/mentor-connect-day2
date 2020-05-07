@@ -10,9 +10,18 @@
 </head>
 <body style="background-color: #eee">
 	<div class="container">
-		<nav class="navbar navbar-dark bg-dark fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<div class="container">
 				<a href="#" class="navbar-brand">WELCOME PAGE</a>
+				<button class="navbar-toggler" data-toggle="collapse"
+					data-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="/registerCompany" class="nav-link">Register Company</a></li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</div>
@@ -24,7 +33,7 @@
 				<strong>My-Info</strong>
 			</div>
 			<div class="card-body">
-				<h4 class="card-title">Welcome, ${userid }</h4>
+				<h4 class="card-title">Welcome, ${name }</h4>
 				<p class="card-text">A warm welcome and lots of good wishes on
 					becoming part of our growing team. Congratulations and on behalf of
 					all the members.</p>
@@ -35,7 +44,7 @@
 						<div class="modal-content">
 							<div class="modal-header">
 								<h5 class="modal-title">
-									<strong>Warning</strong> to ${userid }
+									<strong>Warning</strong> to ${name }
 								</h5>
 								<button class="close" data-dismiss="modal">&times;</button>
 							</div>
