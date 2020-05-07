@@ -52,7 +52,7 @@ public class HelloController3 {
 			String str = "<div class=\"alert alert-success alert-dismissible text-center\">\r\n"
 					+ "			<button class=\"close\" type=\"button\" data-dismiss=\"alert\">\r\n"
 					+ "				<span>&times;</span>\r\n" + "			</button>\r\n"
-					+ "			<strong>Successfully</strong> Registed\r\n" + "		</div>";
+					+ "			<strong>Successfully</strong> Registered\r\n" + "		</div>";
 			mv.addObject("msg", str);
 		}
 		mv.setViewName("registerCompany");
